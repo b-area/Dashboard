@@ -1,0 +1,10 @@
+Requirements:
++ a working backend server 
++ you can push data using the push scripts in the push folder.
+
+1) change the server address in index.html to the correct address
+2) run server using:
+ node server.js
+3) Navigate to 
+ http://localhost:8282 
+ 

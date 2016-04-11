@@ -1,0 +1,13 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "cct-db": {
+    "host": "127.0.0.1",
+    "port": 27017,
+    "database": "cct-dashboard",
+    "name": "cct-db",
+    "connector": "mongodb"
+  }
+}

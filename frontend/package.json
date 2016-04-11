@@ -1,0 +1,19 @@
+{
+    "name": "frontend-server",
+    "version": "0.0.1",
+    "description": "A frontend server for a PI dashboard",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "",
+        "url": ""
+    },
+    "dependencies" : {
+        "express"    : "latest",
+        "request"    : "latest"
+    },
+    "author": "Eddy C. Borera",
+    "license": "ISC"
+}

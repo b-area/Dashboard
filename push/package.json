@@ -1,0 +1,22 @@
+{
+    "name": "data-push",
+    "version": "0.0.0",
+    "description": "This scripts push data to the dashaboard middleware",
+    "main": "push-news.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies" : {
+        "express"    : "latest",
+        "request"    : "latest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:CCTLU/MSSE-5313-Project-I.git"
+    },
+    "author": "Eddy C. Borera",
+    "license": "BSD",
+    "bugs": {
+        "url": "https://github.com/CCTLU/MSSE-5313-Project-I/issues"
+    }
+}

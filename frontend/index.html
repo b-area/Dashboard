@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet"
+    href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <!--
+        <script src="http://your-middleware-server-addres:port-number/socket.io/socket.io.js"></script>
+        -->
+        <script src='http://159.203.172.229:8181/socket.io/socket.io.js'></script>
+
+
+    <script>            
+    $(document).ready(function() {
+
+        /// connecting to the nodejs server
+        var socket = io.connect('http://159.203.172.229:8181'); // e.g: localhost:8585
+
+        // -------------------------------------------------------
+        // - Listening on the 'news' socket.
+        // - update the .news div when a data is receiceved.
+        // ------------------------------------------------------
+        socket.on('news', function(data) {
+            // Every news infos we need is in data (JSON object).
+            $('.news').html(''); // Refresh the news div
+            $('.news').append('<p>' + data.title  +'</p>');
+            $('.news').append('<p>' + data.source +'</p>');
+            $('.news').append('<p>' + data.image  +'</p>');
+        });
+        
+        /* More socket listening here */
+        
+      });
+    </script>
+    
+ </head>
+ <body>
+        <div class="container-fluid">
+            <div class="row">
+                <h3>HELLO WORLD</h3>
+                <div class="news">
+                    <!-- news will be displayed here --> 
+                </div>
+            </div>
+        </div>
+ </body>
+</html>
+
